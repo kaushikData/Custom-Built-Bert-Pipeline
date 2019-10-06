@@ -17,4 +17,4 @@ Once we get tokens, we can convert into ID's so we can map to BERT vocabulary. A
 
 ## Training and Evaluation: 
 
-I am using the standard way to calculate the target label by adding softmax at the end. Similar to other pre-trained models, I have two learning rates lr_pre and lr_regular. The idea is that there is no need to apply aggressive learning rates on the pre-trained part of the network as the parts of network is randomly initialzied but others are pre trained. Decreasing the learning rate for every epoch or for a group of epochs is a good practice. Using Adam optimizer on cross-entropy loss.
+I am using the standard way to calculate the target label by adding softmax at the end. Similar to other pre-trained models, I have two learning rates lr_pre and lr_regular. The idea is that there is no need to apply aggressive learning rates on the pre-trained part of the network as the parts of network are randomly initialzied but others are pre trained. Decreasing the learning rate for every epoch or for a group of epochs is a good practice. Using Adam optimizer on cross-entropy loss.
